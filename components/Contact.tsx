@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
                         required
                      
                         
-                        className='appearance-none block w-full shadow-inner focus:border-2 bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                        className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                         placeholder='Max'
                         />
                      </div>
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                          required
                         
                          
-                         className='appearance-none block w-full shadow-inner focus:border-2 bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                          placeholder='Mustermann'
                         />
                      </div>
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                         required
                       
                         
-                        className='appearance-none block w-full shadow-inner focus:border-2 bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                        className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                         placeholder='max.muster@gmail.com'
                         />
                      </div>
@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                          required
                        
                          
-                         className='appearance-none block w-full shadow-inner focus:border-2 bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                          placeholder='+49 123 4567'
                         />
                      </div>
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                          
                          required
                          placeholder="Deine Nachricht..." 
-                         className='appearance-none block w-full h-full bg-white focus:border-2 text-gray-700 rounded py-5 px-4 leading-tight focus:outline-none focus:bg-white transition-all'
+                         className='appearance-none block w-full h-full bg-white focus:border-2  focus:border-main text-gray-700 rounded py-5 px-4 leading-tight focus:outline-none focus:bg-white transition-all'
                         />
                      </div>
 

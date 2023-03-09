@@ -90,7 +90,7 @@ function Footer() {
            </div>
            <hr className='my-6 border-black sm:mx-auto lg:my-8'></hr>
            <div className='sm:flex sm:items-center sm:justify-between'>
-             <span className='text-sm text-white sm:text-center'>© 2023 BoeingTrucks&Vans GmbH . Erstellt von <a href="https://honet.page" className='font-bold link-footers'>Honet</a></span>
+             <span className='text-[13px] text-white sm:text-center'>© 2023 BoeingTrucks&Vans GmbH . Erstellt von <a href="https://honet.page" className='font-bold link-footers'>Honet</a></span>
             <div className='flex mt-4 space-x-6 sm:justify-center sm:mt-0'>
                 <a href='https://www.instagram.com/' className=' hover:scale-105 transition-all'>
                   <Image
