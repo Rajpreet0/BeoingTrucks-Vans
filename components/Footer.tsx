@@ -31,7 +31,7 @@ function Footer() {
                       src={Logo}
                       height={80}
                       width={160}
-                      className='mr-3 invert'/>
+                      className='mr-3 '/>
                 </Link>
               
               </div>
@@ -75,10 +75,10 @@ function Footer() {
                     <h2 className='mb-6 text-md tracking-wider font-semibold text-main uppercase text-center'>Kontakt Info</h2>
                     <ul className='text-white text-center '>
                         <li className='mb-4'>
-                            <a href='mailto:olifugreven.kontakt@gmail.com' className='link-footers'>Email</a>
+                            <a href='mailto:boeingtrucksvans.kontakt@gmail.com' className='link-footers'>Email</a>
                         </li>
                         <li className='mb-4'>
-                            <a href='tel:+49 15901 190990'className='link-footers'>Anruf</a>
+                            <a href='tel:+49 152 53134794'className='link-footers'>Anruf</a>
                         </li>
                     </ul>
                  </div>

@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import { useEffect, useState } from 'react'
 import About from '../components/About'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
@@ -9,6 +10,8 @@ import VansTrucks from '../components/VansTrucks'
 
 
 const Home: NextPage = () => {
+
+
   return (
     <>
     <Head>

@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
                   <div className='flex flex-wrap -mx-3 mb-4'>
 
                      <div className='w-full md:w-1/2 px-3 mb-4 md:mb-0'>
-                        <label className='block uppercase tracking-widest text-gray-700 text-xs font-bold mb-2'>
+                        <label className='block uppercase tracking-widest  text-xs font-bold mb-2'>
                           Vorname
                         </label>
                         <input
@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
                         required
                      
                         
-                        className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                        className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                         placeholder='Max'
                         />
                      </div>
@@ -40,7 +40,7 @@ const Contact: React.FC = () => {
                          required
                         
                          
-                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                          placeholder='Mustermann'
                         />
                      </div>
@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
                         required
                       
                         
-                        className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                        className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                         placeholder='max.muster@gmail.com'
                         />
                      </div>
@@ -67,7 +67,7 @@ const Contact: React.FC = () => {
                          required
                        
                          
-                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-gray-700 rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
+                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                          placeholder='+49 123 4567'
                         />
                      </div>
@@ -82,7 +82,7 @@ const Contact: React.FC = () => {
                          
                          required
                          placeholder="Deine Nachricht..." 
-                         className='appearance-none block w-full h-full bg-white focus:border-2  focus:border-main text-gray-700 rounded py-5 px-4 leading-tight focus:outline-none focus:bg-white transition-all'
+                         className='appearance-none block w-full h-full bg-white focus:border-2  focus:border-main text-black rounded py-5 px-4 leading-tight focus:outline-none focus:bg-white transition-all'
                         />
                      </div>
 
@@ -97,21 +97,21 @@ const Contact: React.FC = () => {
              {/* -------- LEFT -------- */}
 
              <div className='mt-6'>
-                 <p className='text-lg'>Mustermann Straße 123, <br/> 12345 Musterhausen, Staat</p>
+                 <p className='text-lg'>An der Wurth 1-3 , <br/> 48612 Horstmar, NRW</p>
                  <div className='flex flex-col mt-4 justify-around md:flex-row'>
                      <div className='flex '>
                        <EnvelopeIcon
                        className='w-6 h-6 mr-2'/>
-                        <p className='cursor-pointer hover:underline'><a href='mailto:olifugreven.kontakt@gmail.com'>mustermann@gmail.com</a></p>
+                        <p className='cursor-pointer hover:underline'><a href='mailto:boeingtrucksvans.kontakt@gmail.com'>boeingtrucksvans.kontakt@gmail.com</a></p>
                      </div>
                      <div className='flex ml-0 mt-4 md:mt-0 md:ml-5'>
                        <PhoneIcon
                         className='w-6 h-6 mr-2'/>
-                        <p className='cursor-pointer hover:underline'><a href='tel:+4915901190990'>+0 12345 678910</a></p>
+                        <p className='cursor-pointer hover:underline'><a href='tel:+49 152 53134794'>+49 152 53134794</a></p>
                      </div>
                  </div>
                  <iframe 
-                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19598.098466019677!2d7.377429432809612!3d52.12045344701782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b84aa60c80f9d5%3A0xa27f283d29f3e20!2sBorghorst%2C%2048565%20Steinfurt!5e0!3m2!1sde!2sde!4v1677950639270!5m2!1sde!2sde" 
+                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2452.3860786950863!2d7.315950977129362!3d52.072701369249124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b84bbfaf6fcb5b%3A0xc5637ecd3581a5c9!2sAn%20d.%20Wurth%201%2C%2048612%20Horstmar!5e0!3m2!1sde!2sde!4v1686782595848!5m2!1sde!2sde" 
                  width="100%" height="450" loading="lazy" 
               className='rounded-lg border-4 mt-8 text-center border-main'></iframe>
               

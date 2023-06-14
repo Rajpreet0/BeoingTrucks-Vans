@@ -19,7 +19,7 @@ function Header () {
   return (
     <div>
        
-        <nav className="fixed w-full z-50  bg-[#292929]">
+        <nav className="fixed w-full z-40  bg-[#292929]">
             
             <div className="flex items-center justify-between">
                 <div className="p-2 cursor-pointer">
@@ -27,7 +27,7 @@ function Header () {
                         <Image
                            src={Logo}
                            alt=""
-                           className="invert h-[90px] w-[90px] md:h-[120px] md:w-[120px]"/>
+                           className=" h-[90px] w-[90px]  md:h-[150px] md:w-[150px]"/>
                    </Link>   
                 </div>
                 <Slide>

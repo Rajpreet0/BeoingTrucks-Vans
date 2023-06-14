@@ -11,18 +11,22 @@ function Imprint() {
                className='font-bold mt-8'
               >Angaben gemäß § 5 TMG</p>
                  <br/>
-                 <p>Max Mustermann</p>
-                 <p>Maxmustermannstraße 10</p>
-                 <p>12345 city</p>
+                 <p>Katharina Böing</p>
+                 <p>An der Wurth 1-3</p>
+                 <p>48612 Horstmar</p>
                  <br/>
                  <h4 className='font-bold'>Kontakt:</h4>
                  <br/>
-                 <p>+0 123 456789</p>
-                 <p>max.mustermann@gmail.com</p>
+                 <p>+49 152 53134794</p>
+                 <p>boeingtrucksvans.kontakt@gmail.com</p>
                  <br/>
                  <h4 className='font-bold'>Inhaltlich Verantwortlicher gemäß § 55 RStV:</h4>
                  <br/>
                  <p>Inhaber</p>
+                 <p>Katharina Böing</p>
+                 <br/>
+                 <h4 className='font-bold'>Umsatzsteuer-Identifikationsnummer:</h4>
+                 <p>DE360580408</p>
                  <br/>
                  <h4 className='font-bold'>Verantwortung der Internetpräsenz und der Online Bereitstellung:</h4>
                  <br/>
