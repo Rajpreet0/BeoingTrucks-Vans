@@ -27,7 +27,7 @@ function Header () {
                         <Image
                            src={Logo}
                            alt=""
-                           className=" h-[90px] w-[90px]  md:h-[150px] md:w-[150px]"/>
+                           className="p-1 ml-2 h-[75px] w-[100px]  md:h-[100px] md:w-[150px]"/>
                    </Link>   
                 </div>
                 <Slide>
