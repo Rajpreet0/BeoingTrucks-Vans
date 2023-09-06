@@ -1,8 +1,26 @@
 import React from 'react'
 import Footer from '../../components/Footer'
+import Head from 'next/head'
 
 function Imprint() {
   return (
+  <>
+    <Head>
+    <title>Boeing Trucks&Vans GmbH | Impressum des Autoverkaufs in Horstmar der Familie Böing</title>
+     <link rel="icon" href="/favicon.ico" />
+     <meta name='viewport' content='width=device-width, initial-scale=1'/>
+     <link rel='canonical' href='https://boeing-trucks-vans.de'/>
+      <meta name='Author' content='Katharina Böing'/>
+     <meta
+      name="description"
+      content='Das Impressum - Finden Sie Ihr Traumauto bei Boeing Trucks&Vans GmbH in Horstmar. Wir bieten Ihnen eine große Auswahl an neuen und gebrauchten Autos aller Marken und Modelle. Ob Sie ein PKW, einen Transporter oder einen LKW suchen, bei uns werden Sie sicher fündig.'
+      key="desc"/>
+     <meta name="revisit-after" content='5 days'/>
+     <meta name='keywords' content='horstmar, Katharina Böing, Boeing, Böing, Stadt Horstmar, Kfz-Handel Horstmar, Impressum'/>
+     <meta name="robots" content="all" />
+     <meta name="google" content="notranslate" />
+     <meta itemProp='isFamilyFriendly' content='True'></meta>
+ </Head> 
     <div className='h-screen'>
     <h1 className='pt-40 text-center text-4xl tracking-wider text-black'>Impressum</h1>
             <br/>
@@ -18,7 +36,7 @@ function Imprint() {
                  <h4 className='font-bold'>Kontakt:</h4>
                  <br/>
                  <p>+49 152 53134794</p>
-                 <p>boeingtrucksvans.kontakt@gmail.com</p>
+                 <p>info@boeing-trucks-vans.com</p>
                  <br/>
                  <h4 className='font-bold'>Inhaltlich Verantwortlicher gemäß § 55 RStV:</h4>
                  <br/>
@@ -63,6 +81,7 @@ function Imprint() {
             </div>
       <Footer/>
     </div>
+    </>
   )
 }
 

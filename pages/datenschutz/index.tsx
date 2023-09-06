@@ -1,8 +1,27 @@
 import React from 'react'
 import Footer from '../../components/Footer'
+import Head from 'next/head'
 
 function Privacy() {
   return (
+    <>
+         <Head>
+         <title>Boeing Trucks&Vans GmbH | Datebschutzerklärung des Autoverkaufs in Horstmar der Familie Böing</title>
+      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <link rel="icon" href="/favicon.ico" />
+      <link rel='canonical' href='https://boeing-trucks-vans.de'/>
+      <meta name='Author' content='Katharina Böing'/>
+      <meta
+      name="description"
+      content='Datenschutzerklärung - Finden Sie Ihr Traumauto bei Boeing Trucks&Vans GmbH in Horstmar. Wir bieten Ihnen eine große Auswahl an neuen und gebrauchten Autos aller Marken und Modelle. Ob Sie ein PKW, einen Transporter oder einen LKW suchen, bei uns werden Sie sicher fündig.'
+      key="desc"/>
+        <meta name="revisit-after" content='5 days'/>
+        <meta name='keywords' content='horstmar, Katharina Böing, Boeing, Böing, Stadt Horstmar, Kfz-Handel Horstmar, Impressum'/>
+        <meta name="robots" content="all" />
+        <meta name="google" content="notranslate" />
+        <meta itemProp='isFamilyFriendly' content='True'></meta>
+ </Head> 
+  
     <div className='h-screen'>
         <div className='min-h-screen pt-40 p-6'>
         <h1 className='text-2xl'>Datenschutzerklärung</h1>
@@ -48,13 +67,13 @@ Wir weisen darauf hin, dass die Datenübertragung im Internet (z. B. bei der Kom
 Hinweis zur verantwortlichen Stelle<br/>
 Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:
 <br/><br/>
-Firmenname<br/>
-Inhaberin Mustermann
+Boeing Trucks&Vans GmbH<br/>
+Inhaberin Katharina Böing
 <br/><br/>
-Mustermannstraße 5, 12345 Stadt<br/>
-Telefon: +0 123 456789
+An der Wurth 1-3, 48612 Horstmar<br/>
+Telefon: +49 152 53134794
 <br/><br/>
-E-Mail: info@firmenname.de
+E-Mail: info@boeing-trucks-vans.com
 <br/><br/>
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z. B. Namen, E-Mail-Adressen o. Ä.) entscheidet.
 <br/><br/>
@@ -146,6 +165,7 @@ Mehr Informationen zum Umgang mit Nutzerdaten finden Sie in der Datenschutzerkl�
         </div>
         <Footer/>
     </div>
+    </>
   )
 }
 

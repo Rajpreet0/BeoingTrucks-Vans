@@ -1,9 +1,43 @@
 "use client"
 import React, {useState} from 'react'
 import { EnvelopeIcon, PhoneIcon } from '@heroicons/react/24/outline'
+import emailjs from '@emailjs/browser'
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Contact: React.FC = () => {
+
+const Contact = () => {
+
+   const [surname, setSurname] = useState('')
+   const [lastname, setLastname] = useState('')
+   const [telefon, setTelefon] = useState('')
+   const [email, setEmail] = useState('')
+   const [message, setMessage] = useState('')
+
+   function sendEmail(e) {
+      e.preventDefault();
+      emailjs.sendForm(
+         'service_xmrnvsu',
+         'template_i1lerke',
+         e.currentTarget,
+         'O1mEuU8tiuFbUx8jH'
+      ).then(res => {
+         toast.success(`Deine Email wurde an uns weitergeleitet. Wir melden uns !`);
+         setSurname('');
+         setLastname('');
+         setEmail('');
+         setTelefon('');
+         setMessage('');
+      }).catch(err => {
+         toast.error(`Leider hat was nicht geklappt`);
+         console.log(err);
+      });
+   }
+
+
   return (
+   <>
+   <ToastContainer/>
     <div className='min-h-screen  pt-32  pb-32' id='kontakt' >
          <h1 className='text-center font-bold font-glock tracking-widest text-4xl'>Kontaktieren Sie uns</h1>
           
@@ -15,6 +49,7 @@ const Contact: React.FC = () => {
 
 
                 <form
+                onSubmit={sendEmail}
                 className='w-full max-w-lg'>
                   <div className='flex flex-wrap -mx-3 mb-4'>
 
@@ -26,7 +61,7 @@ const Contact: React.FC = () => {
                         name='surname'
                         required
                      
-                        
+                        value={surname} onChange={(e) => setSurname(e.target.value)}
                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                         placeholder='Max'
                         />
@@ -39,7 +74,7 @@ const Contact: React.FC = () => {
                          name='lastname'
                          required
                         
-                         
+                         value={lastname} onChange={(e) => setLastname(e.target.value)}
                          className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                          placeholder='Mustermann'
                         />
@@ -53,7 +88,7 @@ const Contact: React.FC = () => {
                         name='email'
                         required
                       
-                        
+                        value={email} onChange={(e) => setEmail(e.target.value)}
                         className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                         placeholder='max.muster@gmail.com'
                         />
@@ -66,7 +101,7 @@ const Contact: React.FC = () => {
                          name='telefon'
                          required
                        
-                         
+                         value={telefon} onChange={(e) => setTelefon(e.target.value)}
                          className='appearance-none block w-full shadow-inner focus:border-2 focus:border-main bg-white text-black rounded py-5 px-4 mb-3 leading-tight focus:outline-none focus:bg-white transition-all'
                          placeholder='+49 123 4567'
                         />
@@ -79,7 +114,7 @@ const Contact: React.FC = () => {
                         <textarea
                          name='message'
                         
-                         
+                         value={message} onChange={(e) => setMessage(e.target.value)}
                          required
                          placeholder="Deine Nachricht..." 
                          className='appearance-none block w-full h-full bg-white focus:border-2  focus:border-main text-black rounded py-5 px-4 leading-tight focus:outline-none focus:bg-white transition-all'
@@ -102,7 +137,7 @@ const Contact: React.FC = () => {
                      <div className='flex '>
                        <EnvelopeIcon
                        className='w-6 h-6 mr-2'/>
-                        <p className='cursor-pointer hover:underline'><a href='mailto:boeingtrucksvans.kontakt@gmail.com'>boeingtrucksvans.kontakt@gmail.com</a></p>
+                        <p className='cursor-pointer hover:underline'><a href='mailto:info@boeing-trucks-vans.com'>info@boeing-trucks-vans.com</a></p>
                      </div>
                      <div className='flex ml-0 mt-4 md:mt-0 md:ml-5'>
                        <PhoneIcon
@@ -120,6 +155,7 @@ const Contact: React.FC = () => {
 
            </div>
     </div>
+    </>
   )
 }
 
