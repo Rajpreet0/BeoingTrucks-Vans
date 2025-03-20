@@ -29,7 +29,7 @@ function Imprint() {
                className='font-bold mt-8'
               >Angaben gemäß § 5 TMG</p>
                  <br/>
-                 <p>Katharina Böing</p>
+                 <p>Boeing Trucks & Vans GmbH</p>
                  <p>An der Wurth 1-3</p>
                  <p>48612 Horstmar</p>
                  <br/>
